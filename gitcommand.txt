@@ -1,0 +1,42 @@
+git init command is used to create new project with git
+git config command is used set configuration of given directory at global level and local level
+suppose we want to set by default of configurationof new git repo then it will set as global
+suppose we want to set particular directorywe use local config
+syntax of global configuration is:- git config --global user.name or git config --global user.name "Rahul4321"(to set value at global configuration level).
+syntax of local configuration is:- git config user.name or git config user.name "Rahul4321"(to set value at local configuration level)
+
+Fetch:- this command is use to bring the changes from remote repo(MASTER) to local repo(HEAD).
+Merge:- this command is used to bring the changes from localrepo to working directory.
+Pull:- this command is used to bring the changes from remote repo to working directory.
+git pull=git fetch+git merge.
+
+checkout:- this command is used to discard the changes from working directory.
+eg:-git checkout filename
+
+Reset:- this command is used to unstage. and use to remove the latest commit only done at local repo.
+eg:-git reset HEAD filename.
+    git reset HEAD~1(This remove latest commit)
+3 mode of reset:-
+1.Merge:- this command is bydefault remove latest commit and keep changes in working area.
+2.Soft:- this command remove latest commit and keep changes in staging area.
+3.Hard:- this command remove latest commit and doesnt keep changes in staging area and working area.
+git reset --hard:- this command is used to revert changes.
+
+
+Revert:- this command is used to change any Pushed commit undo the changes in file and make new commit.
+
+rm:- this command is used to delete a changes local and staging area.
+eg:- git rm */filename
+
+diff:- this command is used to track changes made in a file.
+
+ammend:- this command is used to modify the resent commit message it combine stage changes with previous commit instead of creating new commit.
+
+git force push:- this command is overwrites all commit history from local to remote repo.
+git push:-it allow the changes to be pushes if local repo is up to date with remote repo.
+
+HTTPS VS SSH:- 
+https uses password based authentication and ssh key uses public key authentication
+
+diff between two branch:-
+eg:-git diff branch1.. branch2
